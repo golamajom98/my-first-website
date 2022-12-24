@@ -1,0 +1,82 @@
+/* Universel solidcolor */
+* {
+    margin: 0;
+    padding: 0;
+    bottom: 0;
+    outline: 0;
+    text-decoration: none;
+} 
+/* Elememt solidcolor */
+body {
+    background-color: aqua;
+}
+  /* Id Selector */
+  #admin-box{
+    background-color: rgb(182, 38, 13);
+    text-align: center;
+    width: 50%;
+    margin: 10% auto;
+    padding: 20px;
+  }
+  /* Class Selector */
+  .heading {
+    text-transform: uppercase;
+    font-size: 35px;
+    line-height: 35px;
+    font-family: "Courier New", Courier, monospace;
+    margin-bottom: 30px;
+  }
+ 
+
+
+  /* Grouping Selector */
+input,label {
+    display: block;
+    width: 80%;
+    margin: auto;
+}
+label {
+    font-size: 20px;
+    line-height: 0ch20px;
+    margin: 10px auto;
+    font-family:"Arial Narrow', Arial, sans-serif";
+    font-weight: 600;
+}
+input {
+    padding: 10px;
+    background-color: transparent;
+    border: 2px solid black;
+    color: black;
+    font-size: 17px;
+}
+ /* Psudo Element Selector */
+ input::placeholder{
+    color: black;
+    font-size: 17px;
+ }
+ /* Attribute Selector */
+ input[type="submit"] {
+    width: 50%;
+    margin: 20px auto;
+text-transform: capitalize;
+transition: ease-in 0.5s;
+ }
+ /* Psudo class selector */
+ input[type="submit"]:hover {
+    background-color: rgb(243, 14, 14);
+    color: black;
+ }
+ p{
+    font-size: 20px;
+    text-transform: lowercase;
+font-family: "Gill Sans","Gill Sans MT",Calibri, "Trebuchet MS";
+ }
+ .pg {
+    text-transform: uppercase;
+ }
+
+  /* Decending Selector */
+   p a{
+    text-transform: capitalize;
+    color: blue;
+   }

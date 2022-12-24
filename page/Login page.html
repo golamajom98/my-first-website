@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!-- saved from url=(0033)http://127.0.0.1:5500/indesk.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Main CSS -->
+  
+  <title>Login page</title>
+<link rel="stylesheet" href="./Login page_files/style.css"></head>
+<body>
+  <div id="admin-box">
+    <h1 id="first-heading">Login page</h1>
+    <h1 class="another-heading">Login page</h1>
+    <h1>Login page</h1>
+    <h1>Login page</h1>
+     <hr>
+     <form>
+       <label for="">Enter your username:</label> <br>
+       <input type="text" name="user" maxlength="8" placeholder="maximum 8 char" required="">
+       <br> <br>
+       <label for="">Enter your password:</label> <br>
+       <input type="password" name="password" placeholder="password" required="">
+       <br> <br>
+       <input type="submit" value="login"> 
+       <br> <br>
+       <a href="http://127.0.0.1:5500/indesk.html" target="_blank">Forget password</a>
+     </form> <br><br style="
+    color: burlywood;
+">
+     <p>
+      Can't remembar you password please <a href="http://127.0.0.1:5500/page/reset.html" target="_blank">Reset here</a>
+     </p>
+     <p>
+       Don't have an account please
+        <a href="http://127.0.0.1:5500/page/register.html" target="_blank">Register here</a>
+     </p>
+  </div>
+  <p>
+  Don't have an account please
+   <a href="http://127.0.0.1:5500/page/register.html" target="_blank">Register here</a>
+</p>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</body></html>
